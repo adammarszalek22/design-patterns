@@ -4,10 +4,12 @@
 #include "Sofa.h"
 #include <iostream>
 
+#include <string>
+
 class MetalSofa : public Sofa {
     public:
-        void sit_down() const override;
-        void lie_down() const override;
+        std::string sit_down() const override;
+        std::string lie_down() const override;
 };
 
 #endif

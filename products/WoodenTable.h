@@ -4,9 +4,11 @@
 #include "Table.h"
 #include <iostream>
 
+#include <string>
+
 class WoodenTable : public Table {
     public:
-        void put_something_down() const override;
+        std::string put_something_down() const override;
 };
 
 #endif

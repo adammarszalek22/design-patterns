@@ -4,9 +4,11 @@
 #include "Chair.h"
 #include <iostream>
 
+#include <string>
+
 class MetalChair : public Chair {
     public:
-        void sit_down() const override;
+        std::string sit_down() const override;
 };
 
 #endif

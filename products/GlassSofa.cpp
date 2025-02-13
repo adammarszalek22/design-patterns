@@ -1,9 +1,11 @@
 #include "GlassSofa.h"
 
-void GlassSofa::sit_down() const {
-    std::cout << "Sitting down, weak glass, careful!" << std::endl;
+#include <string>
+
+std::string GlassSofa::sit_down() const {
+    return "Sitting down, weak glass, careful!";
 }
 
-void GlassSofa::lie_down() const {
-    std::cout << "Might be a bit uncomfortable" << std::endl;
+std::string GlassSofa::lie_down() const {
+    return "Might be a bit uncomfortable";
 }

@@ -1,5 +1,7 @@
 #include "WoodenChair.h"
 
-void WoodenChair::sit_down() const {
-    std::cout << "Watch out for splinters!" << std::endl;
+#include <string>
+
+std::string WoodenChair::sit_down() const {
+    return "Watch out for splinters!";
 }

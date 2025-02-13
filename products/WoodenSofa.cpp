@@ -1,9 +1,11 @@
 #include "WoodenSofa.h"
 
-void WoodenSofa::sit_down() const {
-    std::cout << "Watch out for splinters!" << std::endl;
+#include <string>
+
+std::string WoodenSofa::sit_down() const {
+    return "Watch out for splinters!";
 }
 
-void WoodenSofa::lie_down() const {
-    std::cout << "Might be a bit uncomfortable" << std::endl;
+std::string WoodenSofa::lie_down() const {
+    return "Might be a bit uncomfortable";
 }

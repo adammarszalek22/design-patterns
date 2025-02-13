@@ -1,5 +1,7 @@
 #include "GlassChair.h"
 
-void GlassChair::sit_down() const {
-    std::cout << "It's a very weak glass, be careful when sitting on it!" << std::endl;
+#include <string>
+
+std::string GlassChair::sit_down() const {
+    return "It's a very weak glass, be careful when sitting on it!";
 }
