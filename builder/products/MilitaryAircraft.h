@@ -8,10 +8,10 @@
 
 class MilitaryAircraft : public Plane {
 	private:
-		vector<int> parts;
+		std::vector<std::string> parts;
 	public:
-		void add_part(std::string part) override;
-		vector<int> get_parts() override;
+		void add_part(const std::string& part) override;
+		std::vector<std::string> get_parts() const override;
 };
 
 #endif

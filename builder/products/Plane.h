@@ -5,12 +5,10 @@
 #include <string>
 
 class Plane {
-	private:
-		vector<int> parts;
 	public:
-		virtual ~Plane() {};
-		virtual void add_part(std::string part) = 0;
-		virtual vector<int> get_parts() = 0;
+		virtual ~Plane() = default;
+		virtual void add_part(const std::string& part) = 0;
+		virtual std::vector<std::string> get_parts() const = 0;
 };
 
 #endif
